@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Quattrocento', serif;
+}
+
+
+
+.container{
+    margin:0 auto;
+    width:30vw;
+    height:80vh;
+    background-color: rgba(159, 247, 159,0.2);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid green;
+}
+form{
+    width:80%;
+}
+.cifrao{
+    background-color:white;
+    float:left;
+    width:20%;
+    height:40px;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.cifrao p{
+    font-size:1.8vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:green;
+    -webkit-user-select: none;
+}
+#valueDollars{
+    width:80%;
+    height:40px;
+    font-size:30px;
+    outline: none;
+    border:0px transparent;
+    border-bottom:1px solid green;
+    background-color:transparent;
+    color:green;
+    padding:0px 5px 0px 5px;
+}
+#Converter{
+    margin:30px 0px 0px 7vw;
+    width:40%;
+    height:30px;
+    color:green;
+    background-color:white;
+    outline: none;
+    font-size:1.4vw;
+    border:1px solid green;
+    cursor: pointer;
+}
+#Converter:active{
+    background-color:green;
+    color:white;
+}
+table{
+    margin-top:20px;
+}
+td{
+    color:green;
+    width:150px;
+    height:40px;
+    font-size:1.6vw;
+    text-align:center;
+}
