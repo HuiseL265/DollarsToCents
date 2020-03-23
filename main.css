@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Quattrocento', serif;
 }
-
+body,html{
+    width:100%;
+    height:100%;
+}
 
 
 .container{
@@ -17,6 +20,7 @@
     justify-content: center;
     align-items: center;
     border:1px solid green;
+    border-radius:10px;
 }
 form{
     width:80%;
@@ -30,6 +34,8 @@ form{
     display:flex;
     justify-content: center;
     align-items:center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .cifrao p{
     font-size:1.8vw;
@@ -58,6 +64,7 @@ form{
     font-size:1.4vw;
     border:1px solid green;
     cursor: pointer;
+    border-radius:5px;
 }
 #Converter:active{
     background-color:green;
@@ -66,10 +73,20 @@ form{
 table{
     margin-top:20px;
 }
+td p{
+    float:left;
+}
 td{
-    color:green;
+    color: green;
     width:150px;
     height:40px;
     font-size:1.6vw;
     text-align:center;
+}
+
+#back{
+    position: fixed;
+    z-index: -1;
+    width:100%;
+    size:100%;
 }
