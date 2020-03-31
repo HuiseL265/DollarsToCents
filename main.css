@@ -4,29 +4,49 @@
     box-sizing: border-box;
     font-family: 'Quattrocento', serif;
 }
-body,html{
+body{
     width:100%;
     height:100%;
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    background-repeat: no-repeat;
+
 }
+
+header{
+    text-align:center;
+    margin:2% 0 2% 0;
+    color:white;
+}
+header a{
+    color:white;
+    text-decoration: none;
+}
+    header a:hover{
+        color:rgb(70, 151, 88);
+        text-decoration: underline;
+    }
 
 
 .container{
     margin:0 auto;
-    width:30vw;
+    width:80%;
+    max-width:400px;
     height:80vh;
-    background-color: rgba(159, 247, 159,0.2);
+    background-color: white;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border:1px solid green;
+    box-shadow:0px 8px 16px rgba(0, 0, 0, 0.16);
     border-radius:10px;
 }
 form{
     width:80%;
+    height:100px;
 }
 .cifrao{
-    background-color:white;
+    background-color:green;
     float:left;
     width:20%;
     height:40px;
@@ -38,9 +58,9 @@ form{
     border-bottom-left-radius: 5px;
 }
 .cifrao p{
-    font-size:1.8vw;
+    font-size:25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:green;
+    color:white;
     -webkit-user-select: none;
 }
 #valueDollars{
@@ -55,18 +75,22 @@ form{
     padding:0px 5px 0px 5px;
 }
 #Converter{
-    margin:30px 0px 0px 7vw;
-    width:40%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width:60%;
     height:30px;
     color:green;
     background-color:white;
     outline: none;
-    font-size:1.4vw;
+    font-size:20px;
     border:1px solid green;
-    cursor: pointer;
     border-radius:5px;
 }
-#Converter:active{
+#Converter:active,
+#Converter:hover{
+    cursor: pointer;
     background-color:green;
     color:white;
 }
@@ -80,7 +104,7 @@ td{
     color: green;
     width:150px;
     height:40px;
-    font-size:1.6vw;
+    font-size:20px;
     text-align:center;
 }
 

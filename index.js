@@ -16,9 +16,7 @@ $(document).ready(function(){
     });
 
     $("#Converter").click(function(){
-        var valor = $('#valueDollars').val();
-        var valString = valor.toString();
-        var valNopoint = 0;
+        let valor = $('#valueDollars').val();
 
         //coins
         var quarterdollar=0;
@@ -29,16 +27,18 @@ $(document).ready(function(){
         var repeat = true;
         console.log(valor);
         
-        if(valor==0){
-            alert("O valor não pode ser 0");
+        if(valor==0 || typeof valor != "string"){
+            alert("O valor terá que ser diferente de 0 ou haver um conteúdo nele");
         }else{
-            valNopoint = valString.split('.').join('');
-            valNopoint = valString.split(',').join('');
+            console.log(typeof valor)
+            valor = valor.split(',').join('');
+            
+            //console.log("valor"+valor);
+            
+                valor = valor*100;
 
-            if(valNopoint == valor){
-                valor*=100;
-            }
-            console.log(valor);
+            //console.log("valor * 100 : "+valor);
+            
 
             do{
                     //quarter dollar
