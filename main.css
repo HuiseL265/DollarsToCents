@@ -13,23 +13,23 @@ body{
 
 }
 
-header{
+footer{
     text-align:center;
-    margin:2% 0 2% 0;
+    margin:2% 0 0 0;
     color:white;
 }
-header a{
+footer a{
     color:white;
     text-decoration: none;
 }
-    header a:hover{
-        color:rgb(70, 151, 88);
+    footer a:hover{
+        color:rgb(126, 251, 255);
         text-decoration: underline;
     }
 
 
 .container{
-    margin:0 auto;
+    margin:4% auto 0 auto;
     width:80%;
     max-width:400px;
     height:80vh;

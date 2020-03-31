@@ -17,6 +17,7 @@ $(document).ready(function(){
 
     $("#Converter").click(function(){
         let valor = $('#valueDollars').val();
+        let valNoPoint = valor;
 
         //coins
         var quarterdollar=0;
@@ -30,16 +31,13 @@ $(document).ready(function(){
         if(valor==0 || typeof valor != "string"){
             alert("O valor terá que ser diferente de 0 ou haver um conteúdo nele");
         }else{
-            console.log(typeof valor)
-            valor = valor.split(',').join('');
-            
-            //console.log("valor"+valor);
-            
-                valor = valor*100;
+            Number(valNoPoint).toFixed(2)
+            valNoPoint = valNoPoint.split(',').join('');
+            valNoPoint = valNoPoint.split('.').join('');
+            valNoPoint = valNoPoint.trim();
 
-            //console.log("valor * 100 : "+valor);
+            if(valNoPoint == valor){ valor = valor*100;}else{valor = valNoPoint}
             
-
             do{
                     //quarter dollar
                     if(valor >= 25){ valor-=25; quarterdollar+=1; }else{
@@ -59,7 +57,7 @@ $(document).ready(function(){
                                     console.log("Penny: "+penny);
                                     $('#penny').text(penny);
 
-                                    $('#coinUsed').text(quarterdollar);
+                                    $('#coinUsed').text(quarterdollar+dime+nickel+penny);
                                     $('#total').text($('#valueDollars').val());
                                     repeat = false;
                                 }
